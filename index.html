@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AuraStep – আপনার পায়ের মাপের জুতা</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600;800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--ink:#1C1C22;--blue:#F3F3F5;--blue-ink:#1C1C22;--sun:#FF5A1F;--card:#FFFFFF;--line:#E3E3E8;--muted:#6B6B78;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141418;--ink:#F2F2F5;--blue:#1E1E24;--blue-ink:#F2F2F5;--card:#1C1C22;--line:#2E2E36;--muted:#A0A0AE;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141418;--ink:#F2F2F5;--blue:#1E1E24;--blue-ink:#F2F2F5;--card:#1C1C22;--line:#2E2E36;--muted:#A0A0AE;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.7 "Hind Siliguri",system-ui,sans-serif}
+h1,h2,h3{font-family:"Baloo Da 2","Hind Siliguri",system-ui,sans-serif;line-height:1.15;margin:0}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{background:var(--blue);color:var(--blue-ink);border-bottom:6px solid var(--sun)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+nav b{font:800 22px "Baloo Da 2",sans-serif}
+nav a{color:var(--blue-ink);text-decoration:none;font-weight:500;margin-left:18px}
+.hero{padding:40px 0 64px}
+.hero h1{font-size:clamp(38px,9vw,76px);font-weight:800;max-width:11em}
+.hero p{max-width:30em;font-size:19px;opacity:.92;margin:18px 0 28px}
+.btn{display:inline-block;background:var(--sun);color:#1C1C22;font-weight:600;padding:13px 26px;border-radius:999px;text-decoration:none}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+section{padding:56px 0}
+h2{font-size:clamp(28px,5vw,40px);font-weight:800;margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.swatch{height:130px;display:flex;align-items:flex-end;padding:14px 16px;font:800 26px "Baloo Da 2",sans-serif;color:#1C1C22}
+.body{padding:16px}
+.body h3{font-size:21px;font-weight:600}
+.meta{color:var(--muted);font-size:15px;margin:4px 0 12px}
+.row{display:flex;justify-content:space-between;align-items:center}
+.price{font:800 22px "Baloo Da 2",sans-serif}
+.order{color:var(--ink);font-weight:600;text-decoration:none;border:2px solid var(--ink);border-radius:999px;padding:4px 16px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.why p{margin:6px 0 0;color:var(--muted)}
+.contact{background:var(--ink);color:var(--bg)}
+.contact a{color:var(--sun);font-weight:600}
+footer{padding:20px 0;text-align:center;color:var(--muted);font-size:15px}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<nav><b>AuraStep</b><span><a href="#collection">জুতা</a><a href="#contact">যোগাযোগ</a></span></nav>
+<div class="hero">
+<h1>পায়ে পরলেই বুঝবেন, এটাই আপনার জুতা।</h1>
+<p>ছেলে, মেয়ে ও বাচ্চাদের জুতা। সারা দেশে ক্যাশ অন ডেলিভারি। মাপ না লাগলে ৭ দিনের মধ্যে বদলে নিন।</p>
+<a class="btn" href="#collection">জুতা দেখুন</a>
+</div>
+</div>
+</header>
+
+<main>
+<section id="collection"><div class="wrap">
+<h2>আমাদের কালেকশন</h2>
+<div class="grid" id="products"></div>
+</div></section>
+
+<section><div class="wrap">
+<h2>কেন AuraStep</h2>
+<div class="why">
+<div><h3>আসল চামড়া ও মজবুত সোল</h3><p>প্রতিটি জোড়া পাঠানোর আগে হাতে পরীক্ষা করা হয়।</p></div>
+<div><h3>মাপ বদলের সুবিধা</h3><p>মাপ না মিললে ৭ দিনের মধ্যে অন্য মাপ নিন।</p></div>
+<div><h3>ক্যাশ অন ডেলিভারি</h3><p>জুতা হাতে পেয়ে টাকা দিন। ঢাকায় ১–২ দিন, সারা দেশে ৩–৪ দিন।</p></div>
+</div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2>অর্ডার করতে যোগাযোগ করুন</h2>
+<p>হোয়াটসঅ্যাপ বা ফোন: <a href="tel:+8801870803669">০১৮৭০-৮০৩৬৬৯</a><br>
+দোকান: সেক্টর ১০, কামারপাড়া, উত্তরা<br>
+খোলা: প্রতিদিন সকাল ১০টা থেকে রাত ৯টা</p>
+</div></section>
+</main>
+<footer>© AuraStep। সর্বস্বত্ব সংরক্ষিত।</footer>
+
+<script>
+var items=[
+{n:"পুরুষের অফিস জুতা",t:"ফর্মাল",c:"#E4E0D8",p:"১,৮৫০",s:"৩৯–৪৫"},
+{n:"পুরুষের স্নিকার",t:"স্নিকার",c:"#D7DDE6",p:"২,২০০",s:"৩৯–৪৪"},
+{n:"মেয়েদের স্যান্ডেল",t:"স্যান্ডেল",c:"#F2D6D2",p:"১,২০০",s:"৩৫–৪০"},
+{n:"মেয়েদের হিল",t:"হিল",c:"#D9E2D0",p:"১,৬৫০",s:"৩৫–৪০"},
+{n:"বাচ্চাদের স্কুল জুতা",t:"কিডস",c:"#FFD9C7",p:"৯৫০",s:"২৮–৩৬"},
+{n:"পুরুষের চটি",t:"চটি",c:"#CFCFD6",p:"৬৫০",s:"৩৯–৪৪"}];
+var wa="https://wa.me/8801870803669?text=";
+document.getElementById("products").innerHTML=items.map(function(i){
+return '<div class="card"><div class="swatch" style="background:'+i.c+'">'+i.t+'</div><div class="body"><h3>'+i.n+'</h3><div class="meta">মাপ: '+i.s+'</div><div class="row"><span class="price">৳'+i.p+'</span><a class="order" href="'+wa+encodeURIComponent(i.n+' অর্ডার করতে চাই')+'">অর্ডার</a></div></div></div>'}).join("");
+</script>
+</body>
+</html>
